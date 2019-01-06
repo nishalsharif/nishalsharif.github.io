@@ -1,8 +1,12 @@
 /* ------------ Sidebar -------------- */
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: Arial, sans-serif;
     margin: 0;
 }
+
 
 .sidebar{
     background-color: #00c851;
@@ -67,6 +71,7 @@ body{
     padding: 20px;
 }
 .main-heading{
+    margin-top: 0;
     font-family: 'Exo 2', sans-serif;
     font-size: 50px;
     text-shadow: 0 0 5px #00c851;
@@ -78,6 +83,10 @@ body{
     display: inline-block;
     margin: 10px;
     box-shadow: 0 0 15px #00c851;
+    transition: all 0.5s;
+}
+.exp-article:hover{
+    transform:perspective(400px) rotateY(-20deg);
 }
 .exp-article h3{
     font-family: 'Courgette', cursive;
@@ -109,6 +118,7 @@ body{
     border-radius: 15px;
     padding: 10px;
     margin: 15px;
+    transition: all 0.5s;
 }
 .edu-article h3{
     font-family: 'Lobster', cursive;
@@ -118,4 +128,82 @@ body{
 .edu-article p{
     color: gray;
     font-size: 18px;
+}
+.edu-article:hover{
+    transform: perspective(400px) rotateX(20deg);
+}
+
+
+
+/* -------------- My Skills ------------- */
+#skills-section{
+    margin-left: 300px;
+    padding: 20px;
+}
+.skills-article{
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0 0 15px #00c851;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+.skills-article:hover{
+    transform: perspective(400px) rotateX(20deg);
+}
+
+.skills-article h3{
+    font-family: 'Lobster', cursive;
+    color: #00c851;
+    font-size: 25px;
+}
+.skills-article p{
+    font-size: 18px;
+    color: gray;
+}
+.fab , .fas{
+    margin: 10px;
+}
+.fab:hover , .fas:hover{
+    color: #00c851;
+}
+
+#interests{
+    margin-left: 300px;
+    padding: 20px;
+}
+
+#cert-section{
+    margin-left: 300px;
+    padding: 20px;
+}
+
+#cert-text{
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 50px;
+}
+.cert-article{
+    padding: 10px;
+ box-shadow: 0 0 15px #00c851;
+border-radius: 10px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    transition: all 0.5s;
+}
+.cert-article p{
+    font-size: 18px;
+}
+.cert-article img{
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+}
+
+
+.cert-article:hover{
+    background-color: #00c851;
+    color: white;
+    transform:perspective(400px) translateY(-20px);
 }
